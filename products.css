@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Zapfino;
+    src: url(./fonts/Zapfino\ Linotype\ One.ttf);
+  }
+  
+  @font-face {
+    font-family: Vagroln;
+    src: url(./fonts/VAGROLN.TTF);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefae9;
+    color: #333;
+}
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font: 600 65px Zapfino;
+    color: rgba(182,49,44,255);
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    font: 25px Vagroln;
+    margin: 0;
+  }
+  
+  h4 {
+    display: flex;
+    justify-content: center;
+    font: 550 35px Zapfino;
+    margin: 0;
+    color: rgb(167, 143, 3);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+  
+  a {
+    text-decoration: none;
+    font: 20px Vagroln;
+    color: black;
+  }
+  
+  a:hover {
+    color: #fefae9;
+  }
+  
+  ul li {
+   padding: 10px;
+  }
+  
+  li:hover {
+    background-color:rgba(182,49,44,255) ;
+  }
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product {
+    background-color: #fefae9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+.product img {
+    width: 80%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.product h2 {
+    margin-bottom: 10px;
+}
+.shop-now-btn , button {
+    background-color: rgba(182,49,44,255);
+    color: #fefae9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.shop-now-btn:hover {
+    background-color: rgba(182,49,44,255);
+}
+#cart-items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+#cart-items li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+#cart-total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* footer */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #fefae9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color:rgba(182,49,44,255);
+    color: #fefae9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-info h2 {
+    color: #fefae9;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }

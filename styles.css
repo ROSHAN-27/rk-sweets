@@ -1,0 +1,209 @@
+@font-face {
+  font-family: Zapfino;
+  src: url(./fonts/Zapfino\ Linotype\ One.ttf);
+}
+
+@font-face {
+  font-family: Vagroln;
+  src: url(./fonts/VAGROLN.TTF);
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefae9;
+}
+
+h2,
+h3 {
+  display: flex;
+  justify-content: center;
+  font: 25px Vagroln;
+  margin: 0;
+}
+
+h3 {
+  color: rgba(182,49,44,255);
+}
+
+h1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font: 600 65px Zapfino;
+  color: rgba(182,49,44,255);
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font: 550 35px Zapfino;
+  margin: 0;
+  color: rgb(167, 143, 3);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(20px);
+}
+
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+  font: 20px Vagroln;
+  color: black;
+}
+
+a:hover {
+  color: #fefae9;
+}
+
+ul li {
+ padding: 10px;
+}
+
+li:hover {
+  background-color:rgba(182,49,44,255) ;
+}
+
+
+.sweet,
+.savoury {
+  display: inline-block; /* Display sweets in a row */
+  vertical-align: top; /* Align sweets at the top */
+  margin-right: 10px; /* Adjust spacing between sweets */
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.sweets-container,
+.savouries-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.item {
+  display: inline-block; /* Display items in a row */
+  vertical-align: top; /* Align items at the top */
+  margin-right: 10px; /* Adjust spacing between items */
+}
+
+.item img {
+  width: 150px; /* Set the width of the images */
+  height: 150px; /* Maintain aspect ratio */
+}
+
+#cart {
+  width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#cart h2 {
+  margin-top: 0;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+  background-color: rgb(71, 166, 134);
+}
+
+#cart-items li {
+  margin-bottom: 5px;
+}
+
+#cart-total {
+  font-weight: bold;
+}
+/* Add to Cart button */
+button.add-to-cart, button
+ {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 1em;
+}
+
+/* Add styles for button hover */
+button.add-to-cart:hover {
+  background-color: #719e73; /* Darker green on hover */
+}
+
+ .quantity-minus, .quantity-plus {
+  margin: 5px 5px;
+  background-color: rgb(110, 204, 135);
+  font: 2em;
+  color: white;
+}
+
+
+/* footer */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+footer {
+  background-color:rgba(182,49,44,255);
+  color: #fefae9;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-info h2 {
+  color: #fefae9;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
