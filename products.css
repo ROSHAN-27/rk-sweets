@@ -164,3 +164,39 @@ body {
   .contact-info p {
     margin: 5px 0;
   }
+
+  .header {
+    background-color: #fefae9; /* Set background color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center-align content */
+  }
+  
+  .header h1 {
+    font-family: 'Zapfino', cursive; /* Use Zapfino font */
+    font-size: 2.5rem; /* Adjust font size */
+    color: rgba(182, 49, 44, 1); /* Set text color */
+    margin-top: 10px; /* Add some top margin */
+  }
+  
+  .header h4 {
+    font-family: 'Zapfino', cursive; /* Use Zapfino font */
+    font-size: 1.5rem; /* Adjust font size */
+    color: rgb(167, 143, 3); /* Set text color */
+    margin-bottom: 10px; /* Add some bottom margin */
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px; /* Reduce padding */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header h1 {
+      font-size: 2rem; /* Reduce font size */
+    }
+  
+    .header h4 {
+      font-size: 1.2rem; /* Reduce font size */
+    }
+  }
