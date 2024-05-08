@@ -5,47 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
    <link rel="stylesheet" href="./contact.css">
+   <link rel="stylesheet" href="./header.css">
+   <link rel="stylesheet" href="./login.css">
   </head>
   <body>
-    <div class="header">
+    <center><p>FOR SHIPPING ON ALL ORDERS ABOVE RS.500 IN INDIA</p></center>
+    <header>
+
+      <section class="logo">
         <div>
-          <h4>Since 1995</h4>
-          <h1>RK Sweets & Savouries</h1>
-          <h3>A Journey Of 29 Years</h3>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li><a href="./pre-order.html">Pre-Order</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
+          <img src="./images/png/logo-no-background.png" alt="">
+        
         </div>
-      </div>
+        <div>
+          <h1><span>RK</span> Sweets</h1>
+          <h3>The house of native sweets & savoury</h3>
+        </div>
+      </section>
+        
+        
+      
+      <section>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li class="dropdown"><a href="">Sweets</a>
+            <div class="dropdown-content">
+              <a href="./kaju.html">Kaju Sweets</a>
+              <a href="./mysorepak.html">Mysore Paak</a>
+              <a href="./laddu.html">Laddu</a>
+              <a href="./soanpapdi.html">Soan Papdi</a>
+              <a href="./milksweets.html">Milk Sweets</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="">Savouries</a>
+            <div class="dropdown-content">
+              <a href="#">Mixtures</a>
+              <a href="#">Murukkus</a>
+              <a href="#">Sev & Seedai</a>
+              <a href="">Boondhi</a>
+              <a href="">Masala Nuts</a>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./login page.html" class="login-link"><img src="./images/user.png"></a></li>
+          <li><a href="" class="login-link"><img src="./images/shopping-cart.png"></a></li>
+        </ul>
+      </section>
+      </header>
     <footer>
       <div class="footer-container">
         <div class="contact-info">
           <div class="left-section">
             <h2>Stall Location</h2>
             <p>Proprietor: Shaik Amanulla</p>
-            <p>Address: [Stall Address]</p>
-            <p>Contact: [Contact Number]</p>
+            <p>Address:[ Beside Jamiya Masjid, OPP Jamiya Complex, Bengaluru Bustand, Madanapalli ]</p>
+            <p>Contact: 9100890132</p>
           </div>
           <div class="right-section">
             <h2>Contact Us</h2>
             <form action="#" method="post">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <button type="submit">Send</button>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="text" name="email" placeholder="Your Email" required>
+              
+              <textarea name="message"  placeholder="Your Message" required></textarea>
+              <button class="opacity" type="button" onclick="login()">SEND</button>
+
             </form>
           </div>
         </div>

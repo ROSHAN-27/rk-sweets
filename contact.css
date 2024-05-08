@@ -1,96 +1,19 @@
-@font-face {
-    font-family: Zapfino;
-    src: url(./fonts/Zapfino\ Linotype\ One.ttf);
-  }
-  
-  @font-face {
-    font-family: Vagroln;
-    src: url(./fonts/VAGROLN.TTF);
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #fefae9;
-  }
-
-  h2,
-h3 {
-  display: flex;
-  justify-content: center;
-  font: 25px Vagroln;
-  margin: 0;
-}
-
-h3 {
-  color: rgba(182,49,44,255);
-}
-
-h1 {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  font: 600 65px Zapfino;
-  color: rgba(182,49,44,255);
-}
-
-h4 {
-  display: flex;
-  justify-content: center;
-  font: 550 35px Zapfino;
-  margin: 0;
-  color: rgb(167, 143, 3);
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  background: transparent;
-  backdrop-filter: blur(20px);
-}
 
 
 
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-}
-
-a {
-  text-decoration: none;
-  font: 20px Vagroln;
-  color: black;
-}
-
-a:hover {
-  color: #fefae9;
-}
-
-ul li {
- padding: 10px;
-}
-
-li:hover {
-  background-color:rgba(182,49,44,255) ;
-}
 /* Footer Styles */
 footer {
-  background-color: #fefae9;
   padding: 50px 0;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  /* display: flex;
-justify-content: space-between; */
 }
 
 .contact-info {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -108,13 +31,13 @@ justify-content: space-between; */
   margin-bottom: 10px;
 }
 
-.right-section input,
 .right-section textarea {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
+  color: #7b7777;
+  background-color: #021d3f;
 }
 
 .right-section textarea {
@@ -122,22 +45,19 @@ justify-content: space-between; */
 }
 
 .right-section button {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #021d3F;
+  color: #7b7777;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.right-section button:hover {
-  background-color: #0056b3;
-}
 
 .mapouter { 
 position:relative;
 text-align:right;
-width:1200px;
+width:500px;
 height:500px;
 }
 .gmap_canvas {
@@ -151,18 +71,7 @@ height:500px;
       height:500px!important;
  }
 
- body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  header {
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
-  }
+
   
   .container {
     padding: 20px;
@@ -181,36 +90,13 @@ height:500px;
     text-align: left;
   }
   
-  .contact-info h2 {
-    color: #fefae9;
-    text-decoration: underline;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
+
   
   .contact-info p {
     margin: 5px 0;
   }
   
- .header {
-    background-color: #fefae9; /* Set background color */
-    padding: 20px; /* Add padding */
-    text-align: center; /* Center-align content */
-  }
-  
-  .header h1 {
-    font-family: 'Zapfino', cursive; /* Use Zapfino font */
-    font-size: 2.5rem; /* Adjust font size */
-    color: rgba(182, 49, 44, 1); /* Set text color */
-    margin-top: 10px; /* Add some top margin */
-  }
-  
-  .header h4 {
-    font-family: 'Zapfino', cursive; /* Use Zapfino font */
-    font-size: 1.5rem; /* Adjust font size */
-    color: rgb(167, 143, 3); /* Set text color */
-    margin-bottom: 10px; /* Add some bottom margin */
-  }
+
   
   @media (max-width: 768px) {
     .header {

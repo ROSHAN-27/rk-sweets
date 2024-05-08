@@ -5,23 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Order | RK Sweets Stall</title>
     <link rel="stylesheet" href="./pre-order.css">
+    <link rel="stylesheet" href="./header.css">
 </head>
 <body>
     <header>
         <div class="header">
-            <div>
-              <h4>Since 1998</h4>
-              <h1>RK Sweets & Savouries</h1>
-              <h3>A Journey Of 26 Years</h3>
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-              </ul>
+          
+          <div class="title-menu">
+        
+            <h1>RK Sweets & Savouries </h1>
+            <h3>A Journey Of 29 Years</h3>
+          </div>
+  
+         
+          <div class="header-icons">
+            <div class="search-container">
+              <input type="text" id="searchInput" class="search-box" placeholder="🔎Search For Products">
+              <div id="dropdown" class="dropdown-content">
+                <a href="#">Sweets</a>
+                <a href="#">Savouries</a>
+                <a href="#">Laddu</a>
+              </div>
+              
             </div>
           </div>
-        <h3>Pre-Order Your Favorites</h3>
+          <div id="navbar-Links">
+            <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./pre-order.html">Pre-Order</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="#" class="login-link">Login</a></li>
+            </ul>
+          </div>
+          <span id="menuButton" class="menuButton sm:hidden" onclick="toggleNav()">&#9776; Menu</span>
+        </div>
+        
+  
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./pre-order.html">Pre-Order</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+            
     </header>
     <div class="container">
         <div class="form-container">

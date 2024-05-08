@@ -1,114 +1,21 @@
-@font-face {
-    font-family: Zapfino;
-    src: url(./fonts/Zapfino\ Linotype\ One.ttf);
-  }
-  
-  @font-face {
-    font-family: Vagroln;
-    src: url(./fonts/VAGROLN.TTF);
-  }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fefae9;
-            color: #333;
-        }
-     
-        h1 {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            font: 600 65px Zapfino;
-            color: rgba(182,49,44,255);
-          }
 
-          h3 {
-            display: flex;
-            justify-content: center;
-            font: 25px Vagroln;
-            margin: 0;
-          }
-          
-          h4 {
-            display: flex;
-            justify-content: center;
-            font: 550 35px Zapfino;
-            margin: 0;
-            color: rgb(167, 143, 3);
-          }
-          
-          .header {
-            display: flex;
-            justify-content: center;
-            background: transparent;
-            backdrop-filter: blur(20px);
-          }
-          ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-evenly;
-            border-bottom: 2px solid black;
-            border-top: 2px solid black;
-          }
-          
-          a {
-            text-decoration: none;
-            font: 20px Vagroln;
-            color: black;
-          }
-          
-          a:hover {
-            color: #fefae9;
-          }
-          
-          ul li {
-           padding: 10px;
-          }
-          
-          li:hover {
-            background-color:rgba(182,49,44,255) ;
-          }
         .container {
             width: 80%;
             margin: auto;
             padding: 20px;
         }
+
         .about-text {
             text-align: justify;
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        .about-text h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .image-gallery img {
-            width: 30%;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+       
+      
 
         /* footer */  
 
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-        }
-        
-        header {
-          background-color: #fefae9;
-          padding: 20px;
-          text-align: center;
-        }
+       
         
         .container {
           padding: 20px;
@@ -148,25 +55,7 @@
             }
         }
 
-        .header {
-          background-color: #fefae9; /* Set background color */
-          padding: 20px; /* Add padding */
-          text-align: center; /* Center-align content */
-        }
         
-        .header h1 {
-          font-family: 'Zapfino', cursive; /* Use Zapfino font */
-          font-size: 2.5rem; /* Adjust font size */
-          color: rgba(182, 49, 44, 1); /* Set text color */
-          margin-top: 10px; /* Add some top margin */
-        }
-        
-        .header h4 {
-          font-family: 'Zapfino', cursive; /* Use Zapfino font */
-          font-size: 1.5rem; /* Adjust font size */
-          color: rgb(167, 143, 3); /* Set text color */
-          margin-bottom: 10px; /* Add some bottom margin */
-        }
         
         @media (max-width: 768px) {
           .header {

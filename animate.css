@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    height: 3000px; /* Adjust height as needed */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+    animation: slide-up 2s backwards; /* Initial animation */
+    /* animation: slide-down 2s forwards; */
+    opacity: 2; /* Initially hide content */
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px; /* Add margin between text and image */
+}
+.animate {
+    transform: translateX(-100vw); /* Move content from right to left */
+}
+
+/* Define animation */
+@keyframes slide-up {
+    from {
+        transform: translateY(50px); /* Move content down */
+        opacity: 0; /* Fade out */
+    }
+    to {
+        transform: translateY(0); /* Move content up */
+        opacity: 1; /* Fade in */
+    }
+}

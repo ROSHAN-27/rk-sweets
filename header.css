@@ -1,0 +1,184 @@
+/* Fonts */
+
+
+@font-face {
+  font-family: bagola;
+  src: url(./fonts/bigola-display-regular.otf);
+}
+
+@font-face {
+  font-family: vagroln;
+  src: url(./fonts/VAGROLN.TTF);
+}
+
+/* General styles */
+ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+center {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font: 600 40px bagola;
+  color: #cf7650;
+}
+
+span {
+  color: #66b46c;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  /* clip-path: circle(50%); */
+  border-radius: 45%;
+}
+
+header {
+  background-color: aliceblue;
+  box-shadow: 2px 2px 20px   grey;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 1rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+h3 {
+  margin: 0;
+  font: 15px Vagroln;
+  color:#cf7650;
+  text-decoration: underline;
+}
+
+ul  {
+  list-style-type: none;
+  display: flex;
+  align-content:center;
+  flex-flow: row wrap;
+}
+
+li {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  font: 17px Vagroln;
+  transition: transform 0.01s ease-in-out;
+  color: #cf7650;
+}
+
+ img {
+  max-width: 100%;
+  height: 20px;
+}
+
+
+
+li:hover {
+  transform: scale(1.6);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  z-index: 2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 8px;
+  text-decoration: none;
+  color: #cf7650;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+  header {
+    padding: .2rem;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+ .logo h3 {
+    margin: 0;
+    font: 11px Vagroln;
+    color:#cf7650;
+    text-decoration: underline;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    background-color: #cf7650;
+    max-width: 100%;
+  }
+
+  li {
+    /* padding : 4px; */
+  }
+
+  a {
+    color: white;
+    font: 10px Vagroln;
+  }
+
+  center p {
+    font-size: 10px;
+  }
+  #cart {
+    width: 200px;
+    
+  }
+  #cart h2 {
+    font-size: 10px;
+  }
+}
+
+@media screen and  (max-width:920px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+}
+

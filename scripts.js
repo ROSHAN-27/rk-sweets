@@ -1,25 +1,31 @@
+
 class Sweet {
   constructor(name, price, imageSrc, id) {
     this.name = name;
     this.price = price;
     this.imageSrc = imageSrc;
     this.id = id;
-    this.quantity = 1; // Initialize quantity to 1
+    this.quantity = 1;
+     // Initialize quantity to 1
   }
 
   createHTMLElement() {
     const div = document.createElement('div');
     div.classList.add('sweet');
     div.innerHTML = `
-      <img src="${this.imageSrc}" alt="${this.name}" />
-      <h2>${this.name}</h2>
-      <p>Price: Rs${this.price.toFixed(2)}</p>
-      <div class="quantity-controls">
-        <button class="quantity-minus">-</button>
-        <span class="quantity">${this.quantity}</span>
-        <button class="quantity-plus">+</button>
+      <div class="image-container">
+        <img src="${this.imageSrc}" alt="${this.name}" />
       </div>
-      <button class="add-to-cart" data-id="${this.id}">Add to Cart</button>
+      <div class="details">
+        <h4>${this.name}</h4>
+        <p>Price: Rs${this.price.toFixed(2)}</p>
+        <div class="quantity-controls">
+          <button class="quantity-minus">-</button>
+          <span class="quantity">${this.quantity}</span>
+          <button class="quantity-plus">+</button>
+        </div>
+        <button class="add-to-cart" data-id="${this.id}">Add to Cart</button>
+      </div>
     `;
     
     const addToCartButton = div.querySelector('.add-to-cart');
@@ -65,7 +71,7 @@ class Savoury {
     div.classList.add('savoury');
     div.innerHTML = `
       <img src="${this.imageSrc}" alt="${this.name}" />
-      <h2>${this.name}</h2>
+      <h4>${this.name}</h4>
       <p>Price: Rs${this.price.toFixed(2)}</p>
       <div class="quantity-controls">
         <button class="quantity-minus">-</button>
@@ -157,34 +163,23 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   const sweets = [
-    new Sweet("Gulab Jamun",  400,  "./images/gulab_jamun-removebg-preview.png",  1 ),
-    new Sweet( "Kaju Katli", 1000, "./images/kaju_katli-removebg-preview.png", 2  ),
-    new Sweet( "Carrot Halwa", 350, "./images/carrot_halwa-removebg-preview.png", 3 ),
-    new Sweet("Bread Cake", 450, "./images/breadcake-removebg-preview.png", 4),
-    new Sweet("Kalakand", 400, "./images/kalakand-removebg-preview.png", 5),
-    new Sweet("Rasgulla", 450, "./images/rasgulla-removebg-preview.png", 6),
-    new Sweet("Laddu", 400, "./images/laddu-removebg-preview.png", 7),
-    new Sweet("Sandwich", 550, "./images/sandwich-removebg-preview.png", 8),
-    new Sweet("DryFruit Halwa", 550,"images/dryfruit halwa.png")
+    new Sweet("SpecialLaddu",  360,  "./images/ladddu-removebg-preview.png",  1 ),
+    new Sweet("Rasgulla", 400, "images/rasgulla-removebg-preview.png", 6),
+    new Sweet("MotichurLaddu", 340, "images/motichurLaddu-removebg-preview.png", 7),
+    new Sweet("CarrotKalakand", 400, "./images/sweet-removebg-preview.png", 8),
+    new Sweet("SoanPapdi", 400, "./images/soanpapdi-removebg-preview.png", 8),
+
   ];
 
+
+
   const savouries = [
-    new Savoury("Mixture", 300, "./images/mixture-removebg-preview.png", 9),
-    new Savoury("Murukulu", 250, "./images/murukulu-removebg-preview.png", 10),
-    new Savoury(
-      "Kaju Mixture",
-      450,
-      "./images/special_kaju_mixture-removebg-preview.png",
-      11
-    ),
-    new Savoury("Chakodi", 280, "./images/chakodi-removebg-preview.png", 13),
-    new Savoury("Nippattu", 330, "./images/nippattu-removebg-preview.png", 14),
-    new Savoury(
-      "White Muruku",
-      250,
-      "./images/nippats-removebg-preview.png",
-      15
-    ),
+    new Savoury("RK Special Mixture", 300, "./images/dryfruit mixture.png", 9),
+    new Savoury("Khara Boondi", 250, "./images/kharaboondi.png", 10),
+    new Savoury( "White Muruku",250, "./images/nippats-removebg-preview.png",15),
+    new Savoury("Chakodi", 280, "./images/chakodi.png", 13),
+    new Savoury("Masala Peanuts", 330, "./images/masala peanuts.png", 14),
+    
   ];
 
   sweets.forEach((sweet) => {
@@ -263,6 +258,102 @@ function purchase() {
     cartTotal.textContent = "Rs0.00";
   }
 }
+
+class Sweets1 {
+  constructor(name, imageSrc) {
+    this.name = name;
+    this.imageSrc = imageSrc;
+  }
+
+  createHTMLElement() {
+    const div = document.createElement('div');
+    div.classList.add('sweets1');
+    div.innerHTML = `
+    <a href="shop.html" class="sweet-link">
+    <div class="image-container">
+      <img src="${this.imageSrc}" alt="${this.name}" />
+    </div>
+    <div class="details">
+      <h4>${this.name}</h4>
+    </div>
+  </a>
+    `;
+
+    return div;
+  }
+}
+
+const sweets1 = [
+  new Sweets1("Dry Fruit Laddu", "images/dryfruit.png"),
+  new Sweets1("Laddu", "images/gole laddu.jpg"),
+  new Sweets1("Milk Kalakand", "images/sliderImage2.png"),
+  new Sweets1("Kaju Katli", "images/sliderImage1.png"),
+  new Sweets1("Mysore Pak", "images/mysorepak.png"),
+  new Sweets1("Gulab Jamun", "images/jamun.jpg"),
+  new Sweets1("Bread Cake", "images/kalakand.png"),
+  new Sweets1("Halwa", "images/Halwa.png"),
+];
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sweets1Container = document.getElementById("sweetsContainer1");
+  
+  sweets1.forEach((sweet) => {
+    const sweetElement = sweet.createHTMLElement();
+    sweets1Container.appendChild(sweetElement);
+  });
+});
+
+class Savoury1 {
+  constructor(name, imageSrc) {
+    this.name = name;
+    this.imageSrc = imageSrc;
+  }
+
+  createHTMLElement() {
+    const div = document.createElement('div');
+    div.classList.add('savoury1');
+    div.innerHTML = `
+      <a href="shop.html" class="savoury1-link">
+        <div class="image-container">
+          <img src="${this.imageSrc}" alt="${this.name}" />
+        </div>
+        <div class="details">
+          <h4>${this.name}</h4>
+        </div>
+      </a>
+    `;
+
+    return div;
+  }
+}
+
+const savoury1Items = [
+  new Savoury1("Bombay Mixture",  "images/Bombay Mixture.png"),
+  new Savoury1("NavaDhanyalu", "images/NavaDhanyalu.png"),
+  new Savoury1("Masala Nuts", "images/masala nuts.png"),
+  new Savoury1("Pakora", "images/pakora.jpg"),
+  new Savoury1("Masala ChanaDal", "images/masala chanadal.jpeg"),
+  new Savoury1("Sev & Seedai", "images/Butter Muruku.png"),
+  new Savoury1("Ompudi", "images/ompudi.jpg"),
+  new Savoury1("Murukulu", "images/nippattu-removebg-preview.png"),
+  
+  
+];
+
+document.addEventListener("DOMContentLoaded", function () {
+  const savoury1Container = document.getElementById("savoury1Container");
+  
+  savoury1Items.forEach((savoury1) => {
+    const savoury1Element = savoury1.createHTMLElement();
+    savoury1Container.appendChild(savoury1Element);
+  });
+});
+
+
+
+
+
+
 
 //   sweets.forEach(sweet => {
 //     const sweetElement = sweet.createHTMLElement();
