@@ -29,13 +29,24 @@ center {
   color: white;
 }
 
-h1 {
-  font: 600 40px bagola;
-  color: #cf7650;
+h1, h3, .main-content1 h2, .main-content2 h2 {
+  color: transparent;
+  transform: translate(50% 50%);
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
 }
 
-span {
-  color: #66b46c;
+h1 {
+  font: 600 40px bagola;
 }
 .logo {
   display: flex;
@@ -51,7 +62,7 @@ span {
 }
 
 header {
-  background-color: aliceblue;
+  background-color: #0b1826;
   box-shadow: 2px 2px 20px   grey;
   display: flex;
   justify-content: space-between;
@@ -65,8 +76,6 @@ header {
 h3 {
   margin: 0;
   font: 15px Vagroln;
-  color:#cf7650;
-  text-decoration: underline;
 }
 
 ul  {
@@ -84,7 +93,7 @@ a {
   text-decoration: none;
   font: 17px Vagroln;
   transition: transform 0.01s ease-in-out;
-  color: #cf7650;
+  color: goldenrod;
 }
 
  img {
@@ -143,14 +152,11 @@ li:hover {
  .logo h3 {
     margin: 0;
     font: 11px Vagroln;
-    color:#cf7650;
-    text-decoration: underline;
   }
 
   ul {
     display: flex;
     flex-direction: row;
-    background-color: #cf7650;
     max-width: 100%;
   }
 

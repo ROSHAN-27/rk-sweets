@@ -286,8 +286,8 @@ class Sweets1 {
 const sweets1 = [
   new Sweets1("Dry Fruit Laddu", "images/dryfruit.png"),
   new Sweets1("Laddu", "images/gole laddu.jpg"),
-  new Sweets1("Milk Kalakand", "images/sliderImage2.png"),
-  new Sweets1("Kaju Katli", "images/sliderImage1.png"),
+  new Sweets1("Milk Kalakand", "images/sliderImag.jpg"),
+  new Sweets1("Kaju Katli", "images/sliderImage.jpg"),
   new Sweets1("Mysore Pak", "images/mysorepak.png"),
   new Sweets1("Gulab Jamun", "images/jamun.jpg"),
   new Sweets1("Bread Cake", "images/kalakand.png"),
@@ -335,7 +335,7 @@ const savoury1Items = [
   new Savoury1("Masala ChanaDal", "images/masala chanadal.jpeg"),
   new Savoury1("Sev & Seedai", "images/Butter Muruku.png"),
   new Savoury1("Ompudi", "images/ompudi.jpg"),
-  new Savoury1("Murukulu", "images/nippattu-removebg-preview.png"),
+  new Savoury1("Nippattu", "images/nippattu-removebg-preview.png"),
   
   
 ];

@@ -6,8 +6,8 @@ body {
   background-color: #00FFFF;
 }
 .img1 {
-  max-width: 100%;
-  height: auto;
+  width: 1300px;
+  height: 500px;
 }
 
 .laddu {
@@ -56,24 +56,24 @@ body {
 }  
 
 .main-content1 {
-  background-color: #cf7650;
+  background-color: #0b1826;
   padding: 1em;
 }
 
 .main-content2 {
-  background-color: #5a7e5c;
+  background-color: #0b1826;
   padding: 1em;
 }
 
 .main-content1 h2, .main-content2 h2 {
   font: 600 40px bagola;
-  color: white;
 }
 
 .main-content1 p, .main-content2 p {
-  color: white;
+  color: goldenrod;
   text-align: center;
 }
+
 
 .sweets-container1, .savouries-container1 {
   display: grid;
@@ -91,7 +91,7 @@ body {
 }
 
 .savoury1 img {
-  border: 5px solid  #68ae6f;
+  border: 5px solid  rgb(188, 165, 126);
 }
 
 .sweets1 a, .savoury1 a {
@@ -189,7 +189,7 @@ button:hover {
 
 
 /* Responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .sweets-container,
   .savouries-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -203,4 +203,13 @@ button:hover {
   }
   
 }
+
+@media screen and (max-width: 425px) {
+  .img1 {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
 
